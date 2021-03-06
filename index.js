@@ -3,9 +3,10 @@ const Hapi = require('@hapi/hapi')
 const plugins = require('./plugins')
 const routes = require('./routes')
 
-async function startServer () {
+async function startServer () { 
   const server = Hapi.Server({
-    port: 3000
+    port: 3000,
+    debug: { request: ['error'] }
   })
 
   await plugins.register(server)

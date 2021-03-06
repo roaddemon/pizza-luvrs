@@ -1,0 +1,2 @@
+scp -r -i ../pizzakey.pem ./pizza-luvrs/ ec2-user@3.223.205.163:/home/ec2-user
+ssh -i pizzakey.pem ec2-user@3.223.205.163
